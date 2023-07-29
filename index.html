@@ -4,176 +4,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter Clone</title>
+    <title>Document</title>
     <style>
-        body {
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgb(58, 58, 58);
-            width: 100vw;
+        }
+
+        body {
+
+            background-color: rgb(36, 36, 36);
             height: 100vh;
-     
-        }
-
-        .flex {
-            display: flex;
-            justify-content: center;
-            border-radius: 20px;
-
-            background-color: rgb(0, 0, 0);
-
-            width: 580px;
-            height: 680px;
-        }
-
-        .container { 
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-            gap: 20px;
-            padding-bottom: 100px;
-        }
-        
-
-        .title { 
-            color: white;
         }
 
-        .login { 
-            width: 100%;
-        }
-
-        .conta,
-        .apple {
-            cursor: pointer;
-            background-color: rgb(248, 244, 244);
-            padding: 10px 70px;
-            border-radius: 20px;
-        }
-
-        .user{ 
-            width: 100%;
-        }
-
-        .text-login {
-            width: 100%;
-            box-sizing: border-box;
-            background-color: rgba(249, 255, 249, 0);
-            border: 1px solid rgb(107, 107, 107);
-            padding: 20px 0px;
-        }
-
-
-        .middle { 
-            color: white;
-        
-          
-        }
-        
-        .button-next { 
-            width: 100%;
-        }
-
-        .button-next > button { 
-            cursor: pointer;
-            padding: 10px 50px;
-            border-radius: 20px;
-            border: none;
-            width: 100%;
-        }
-        
-        .forgot-password { 
-            width: 100%;
-        }
-
-        .forgot-password > button { 
-            cursor: pointer;
-            width: 100%;
-            padding: 7px 0px;
-            border-radius: 20px;
+        main {
+            width: 600px;
+            height: 700px;
             background-color: black;
             color: white;
-            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
         }
 
-        input { 
+        h1 { 
+            font-size: 27px;
+            align-self: flex-start;
+            text-align: start;
+        
+       
+  
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(0, 0, 0);
+            width: 270px;
+            gap: 22px;
+            margin-bottom: 50px;
+        }
+
+        .x {
+            width: 100px;
+            height: 70px;
+        }
+
+        .logins {
+            padding: 12px 0px;
+
+        }
+
+        .botoes-logins {
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            padding: 13px 0px;
+
+            border-radius: 30px;
+            border: none;
+
+        }
+
+        .login-apple {
+            margin-top: 15px;
+        }
+
+        .botton,
+        .botoes-logins {
+            width: 100%;
+        }
+
+        /* modificaçoes input */
+        .input-usuario {
+            width: 100%;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 20px 0px;
+            border: 1px solid gray;
+            background-color: black;
             color: white;
             font-size: 15px;
         }
 
-        span {
-            display: block;
+        input::placeholder {
+            font-size: 15px;
+            color: gray;
         }
 
-        a { 
-            color: white;
-            text-decoration: none;
-     
-      
+        /* end */
+
+        .bottom {
         
-        }
-        .link { 
-            text-align: start; 
+            width: 100%;
         }
 
-        .bottom { 
-            display: inline;
-            color: rgb(86, 86, 233);
+        button {
+            cursor: pointer;
+            width: 100%;
+            padding: 10px 0px;
+
+            border-radius: 30px;
+            border: none;
+
         }
 
-        img { 
-            width: 150px;
-            height: 70px;
+        .forgot {
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+
+        }
+
+        .sign {
+            cursor: pointer;
+            color: rgb(57, 105, 238);
        
         }
 
+        p { 
+            align-self: flex-start;
+            text-align: start;
+        }
 
+        @media (max-width: 768px) { 
+          body { 
+            background-color: black;
+          }
+        }
+        
+    </style>
 </head>
 
 <body>
-    <div class="flex">
+    <main>
         <div class="container">
-            <img src="/x.webp" alt="" class="logotwtiter">
-        <div class="title">
+            <div class="logo">
+                <img class="x" src="x.webp" alt="">
+            </div>
             <h1>Sign in to Twitter</h1>
-        </div>
-        <div class="login">
-            <span class="conta">Sign in as account</span>
-        </div>
-        <div class="login">
-            <span class="apple">Sign in with Apple</span>
-        </div>
+            <div class="botton">
+                <div class="login-google"><button class="botoes-logins">Sign in as account</button> </div>
+                <div class="login-apple"><button class="botoes-logins">Sign in with Aplle</button> </div>
+            </div>
 
-        <!-- Meio da Seçao -->
-        <div class="middle">
             <span>or</span>
+
+            <div class="input-usuario">
+                <input type="text" placeholder="Phone, email, or username">
+            </div>
+
+            <div class="bottom">
+                <div class="botao-proximo">
+                    <button>Next</button>
+                </div>
+
+                <div class="esqueci-password">
+                    <button class="forgot">Forgot password?</button>
+                </div>
+            </div>
+
+            <p>Don't have an account? <span class="sign">Sign up</span> </p>
+
         </div>
-
-        <div class="user">
-            <input class="text-login" type="text" placeholder="Phone, email, or username">
-        </div>
-
-        <div class="button-next">
-            <button>Next</button>
-        </div>
-
-        <div class="forgot-password">
-            <button>Forgot password?</button>
-        </div>
-
-        <div class="link">
-        <a href="#">Don't have an account? <span class="bottom">Sign up</span></a>
-        </div>
-
-    </div>
-    </div>
-
-  
+    </main>
 </body>
 
 </html>
