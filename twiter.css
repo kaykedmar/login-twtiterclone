@@ -1,5 +1,5 @@
 body { 
-  background-color: gray;
+
   color: white;
   margin: 0;
   background-color: black;
@@ -71,6 +71,7 @@ img {
   padding-top: 20px;
   padding-left: 10px;
   border: 1px solid rgb(48, 48, 48);
+
 }
 
 h3 { 
@@ -81,6 +82,7 @@ h3 {
   margin-left: 10px;
   border-radius: 50%;
   cursor: pointer;
+  object-fit: contain;
 }
 
 #info { 
@@ -91,7 +93,7 @@ h3 {
 #postar { 
   margin-bottom: 10px;
   margin-top: 30px;
-  margin-left: 120px;
+ 
   padding: 7px 15px;
   border-radius: 20px;
   background-color: rgb(0, 140, 255);
@@ -99,6 +101,15 @@ h3 {
   color: white;
   font-weight: bold;
   cursor: pointer;
+
+}
+
+.botao-postar { 
+  display: flex;
+  flex: 1; /* Garante que o botão ocupe todo o espaço disponível */
+  justify-content: flex-end; /* Alinha o conteúdo à direita */
+  align-items: flex-end; 
+  margin-right: 20px;
 }
 
 .mostrar-mais { 
@@ -118,7 +129,7 @@ h3 {
 #postagem { 
   width: 400px;
   margin-left: 10px;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   cursor: pointer;
   margin: 0;
 }
@@ -196,4 +207,8 @@ h2 {
 
 #oque-aconteceu { 
   color: gray;
+}
+
+input { 
+  width: 80%;
 }
