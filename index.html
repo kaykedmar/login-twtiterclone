@@ -84,6 +84,7 @@
         .input-usuario {
             width: 100%;
             text-align: center;
+          
         }
 
         input {
@@ -93,11 +94,13 @@
             background-color: black;
             color: white;
             font-size: 15px;
+     
         }
 
         input::placeholder {
             font-size: 15px;
             color: gray;
+            padding: 10px;
         }
 
         /* end */
@@ -160,7 +163,8 @@
             <span>or</span>
 
             <div class="input-usuario ">
-                <input class="js-input" type="text" placeholder="Phone, email, or username">
+                <input class="js-input" type="password" placeholder="Try password 123" onkeydown="
+                   eventEnter(event) ">
             </div>
 
             <div class="bottom js-next">
@@ -174,7 +178,7 @@
             </div>
 
             <p>Don't have an account? <span class="sign">Sign up</span> </p>
-
+    
         </div>
     </main>
     <script src="script.js"></script>

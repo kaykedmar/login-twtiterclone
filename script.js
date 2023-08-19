@@ -4,15 +4,18 @@ function inputElemento() {
 
 
 
-  if(inputValor.value === 123) { 
-    window.location.href = 'twitter.html';
-  }
+  if(inputValor.value === '123') { 
+    window.location.href = 'twiiter.html';
+  } 
 
   inputValor.value = '';
   console.log(valor)
 }
 
-function event() { 
-  
+function eventEnter(event) {
+  if(event.key === 'Enter') { 
+    inputElemento()
+  } 
+
 }
 
