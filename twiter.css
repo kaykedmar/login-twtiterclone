@@ -9,8 +9,8 @@ body {
 
 main { 
   margin-left: 61px;
-  width: 900px;
   display: flex;
+  justify-content: center;
 
 }
 
@@ -52,8 +52,10 @@ header {
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(0, 0, 0);
+  width: 150px;
+  padding-right: 80px;
 
-  padding-right: 20px;
+
 }
 
 
@@ -65,7 +67,7 @@ span {
 
 #postarum { 
   margin-bottom: 10px;
-
+  margin-top: 10px;
  
   padding: 7px 15px;
   border-radius: 20px;
@@ -75,6 +77,7 @@ span {
   font-weight: bold;
   cursor: pointer;
 }
+
 
 img { 
   width: 40px;
@@ -187,7 +190,7 @@ h3 {
   margin-left: 20px;
   margin-top: 10px;
   top: 5px;
-  width: 350px;
+  width: 250px;
 }
 
 input { 
@@ -209,7 +212,7 @@ input {
 }
 
 #titulo { 
-  font-size: 25px;
+  font-size: 24px;
   margin-bottom: 10px;
   font-weight: bold;
   margin-top: 0;
@@ -273,12 +276,22 @@ p {
 .elonmusk, .mark, .billgates { 
   display: flex;
   flex-direction: row;
+
+
+}
+
+.detalhes {
+  display: flex;
+  align-items: center;
+
+
 }
 
 
 .elonmusk > span { 
   margin-left: 10px;
 }
+
 
 #nomes { 
   margin-left: 10px;
@@ -295,4 +308,24 @@ p {
   width: 40px;
   height: 40px;
   object-fit: cover;
+  cursor: pointer;
 }
+
+.descri { 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  
+}
+
+.descris { 
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+display: inline-block;
+}
+
+
+
+
+
